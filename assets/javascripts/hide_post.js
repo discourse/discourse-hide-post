@@ -7,7 +7,7 @@
     renderHide: function(post, buffer) {
       var direction = !!post.getWithDefault("temporarily_hidden", false) ? "down" : "up";
       buffer.push('<button title="' + direction + '" data-action="hide">');
-      buffer.push('<i class="icon-chevron-' + direction + '"></i>');
+      buffer.push('<i class="fa fa-chevron-' + direction + '"></i>');
       buffer.push('</button>');
     },
 
